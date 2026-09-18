@@ -1,102 +1,85 @@
-/* Grundlegende Einstellungen */
-* {
-    box-sizing: border-box;
-}
-
+/* Das ist die Schrift und Hintergrundfarbe der ganzen Seite */
 body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #eaf4f6;
     color: #222222;
-    background-color: #cef0f5;
 }
 
-/* Kopfbereich */
+/* Der obere Bereich der Webseite */
 header {
-    padding: 40px 20px;
+    padding: 30px;
     text-align: center;
     color: white;
     background-color: #173b63;
 }
 
+/* Die Hauptüberschrift */
 h1 {
-    margin: 0 0 10px;
-    font-size: 2.2rem;
+    margin: 0;
 }
 
-/* Hauptbereich */
+/* Der Bereich mit der Tabelle */
 main {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
+/* Farbe der zweiten Überschrift */
 h2 {
     color: #173b63;
 }
 
-/* Tabelle */
+/* Die Tabelle nimmt die ganze Breite ein */
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Abstand und Linien in der Tabelle */
 th,
 td {
-    padding: 14px;
+    padding: 12px;
     text-align: left;
-    vertical-align: top;
-    border-bottom: 1px solid #d7dce2;
+    border-bottom: 1px solid #cccccc;
 }
 
+/* Die Überschriften der Tabelle */
 th {
     color: white;
     background-color: #2563a6;
 }
 
+/* Jede zweite Zeile bekommt eine andere Farbe */
 tr:nth-child(even) {
-    background-color: #f5f8fb;
+    background-color: #f3f7f9;
 }
 
+/* Die Zeile wird beim Darüberfahren heller */
 tr:hover {
-    background-color: #e5f0fa;
+    background-color: #e0eff8;
 }
 
-/* Links */
-a {
-    color: #2563a6;
-}
-
-a:hover {
-    color: #173b63;
-}
-
-/* Fußbereich */
+/* Der untere Bereich der Webseite */
 footer {
-    margin-top: 40px;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 15px;
     text-align: center;
     color: white;
     background-color: #173b63;
 }
 
-/* Anpassung für Smartphones */
+/* Die Tabelle passt sich an kleinere Bildschirme an */
 @media (max-width: 700px) {
-    h1 {
-        font-size: 1.7rem;
-    }
-
     table {
         display: block;
         overflow-x: auto;
-        white-space: nowrap;
     }
 
     th,
     td {
-        padding: 10px;
+        padding: 8px;
     }
 }
